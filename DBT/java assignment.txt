@@ -1,0 +1,292 @@
+Question 3:
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int count = 1;
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(count + " ");
+                count++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+Question 8:
+
+1
+10
+101
+1010
+10101
+
+class HelloWorld {
+    public static void main(String[] args) {
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+               if (j % 2 == 0) {
+                    System.out.print("0");
+                } else {
+                    System.out.print("1");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+Question 6:
+
+1 
+2 1 
+3 2 1 
+4 3 2 1 
+5 4 3 2 1
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        for(int i=1;i<=5;i++){
+            for(int j=i;j>0;j--){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+
+Question 7:
+
+10101
+01010
+10101
+01010
+10101
+
+class HelloWorld {
+    public static void main(String[] args) {
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                if((i+j)%2==0){
+                    System.out.print("1");
+                }
+                else{
+                    System.out.print("0");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+Question 24:
+
+1
+2 6
+3 7 10 
+4 8 11 13
+5 9 12 14 15
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int num = 1;
+        for (int i = 1; i <= 5; i++) {
+            int temp = num;
+            for (int j = 1; j <= i; j++) {
+                System.out.print(temp + " ");
+                temp =temp+5 - j;
+            }
+            num++;
+            System.out.println();
+        }
+    }
+}
+
+Extra Question:
+1234567
+234567
+34567
+4567
+567
+67
+7
+1
+12
+123
+1234
+12345
+123456
+
+class HelloWorld {
+    public static void main(String[] args) {
+        for(int i=1;i<=7;i++){
+            for(int j=i;j<=7;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+        for(int i=1;i<=6;i++){
+        for(int j=1;j<=i;j++){
+        System.out.print(j);
+        }
+      System.out.println();
+    }
+    }
+}
+
+Question:25
+
+1 2 3 4 5 6 7
+2 3 4 5 6 7 1
+3 4 5 6 7 1 2
+4 5 6 7 1 2 3
+5 6 7 1 2 3 4
+6 7 1 2 3 4 5
+7 1 2 3 4 5 6
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        for(int i=1;i<=7;i++){
+            for(int j=i;j<=7;j++){
+                System.out.print(j);
+            }
+             for(int j=1;j<i;j++){
+                 System.out.print(j);
+             }
+            System.out.println();
+         }
+        }
+     }
+
+Question 18:
+
+7
+7 6 
+7 6 5
+7 6 5 4
+7 6 5 4 3
+7 6 5 4 3 2 
+7 6 5 4 3 2 1
+
+class HelloWorld {
+    public static void main(String[] args) {
+       for(int i=7;i>=1;i--)
+       {
+           for(int j=7;j>=i;j--){
+               System.out.print(j+" ");
+           }
+           System.out.println();
+       }
+    }
+}
+
+Question 10:
+
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
+F F F F F F 
+
+class HelloWorld {
+    public static void main(String[] args) {
+        for(int i=1;i<=5;i++){
+            char letter = (char)('A'+i-1);
+            for(int j=1;j<=i;j++){
+                System.out.print(letter+" ");
+            }
+            System.out.println();
+        }
+       
+    }
+}
+
+
+Question 1 :
+Write a Java program to create a new array list, add some colors (string) and print out the collection.
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Yellow");
+        colors.add("Orange");
+        System.out.println("Colors: " + colors);
+    }
+}
+
+
+Question 2:
+2.	Write a Java program to insert an element into the array list at the first position.
+     import java.util.ArrayList;
+
+public class InsertFirstPosition {
+    public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("Apple");
+        arrayList.add("Banana");
+        arrayList.add("Orange");
+        System.out.println("ArrayList before insertion: " + arrayList);
+        arrayList.add(0, "Grapes");
+        System.out.println("ArrayList after insertion: " + arrayList);
+    }
+}
+
+
+Question 4 : Write a Java program to sort a given array list.
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class SortArrayList {
+    public static void main(String[] args) {
+       ArrayList<Integer> arrayList = new ArrayList<>();
+
+
+        arrayList.add(5);
+        arrayList.add(2);
+        arrayList.add(7);
+        arrayList.add(1);
+        arrayList.add(9);
+
+        System.out.println("ArrayList before sorting: " + arrayList);
+
+        Collections.sort(arrayList);
+
+        System.out.println("ArrayList after sorting: " + arrayList);
+
+    }
+}
+
+Question 3:
+
+import java.util.ArrayList;
+
+public class RetrieveElementAtIndex {
+    public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("Apple");
+        arrayList.add("Banana");
+        arrayList.add("Orange");
+        int index = 1;
+        System.out.println("Element at index " + index + ": " + arrayList.get(index));
+    }
+}
+
+
+
